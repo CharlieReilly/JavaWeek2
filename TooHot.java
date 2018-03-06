@@ -1,3 +1,4 @@
+package testexercise;
 
 public class TooHot {
 	int temperature;
@@ -9,15 +10,15 @@ public class TooHot {
 		
 	}
 		
-	public void tooHot(int temperature, boolean isSummer) {
+	public static boolean tooHot(int temperature, boolean isSummer) {
 		
 		
 		if((60 <= temperature && temperature <= 100 && isSummer) || (60 <= temperature && temperature <= 90 && !isSummer)) {
-			System.out.println("true");
+			return true;
 		}
 
 		else {
-			System.out.println("false");
+			return false;
 		}
 		}
 

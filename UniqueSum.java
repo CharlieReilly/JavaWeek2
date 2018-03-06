@@ -1,32 +1,32 @@
+package src;
 
 public class UniqueSum {
 
-	 int a;
-	 int b;
-	 int c;
-	 
+
 	  public UniqueSum() {
 		  
 	  }
 	  
-	  public void uniqueSum (int a, int b, int c) {
+	  public int uniqueSum (int a, int b, int c) {
 		  if(a==b && b!=c) {
-			  System.out.println(c);
+			 return c;
 		  }
 		  if(a==c && b!=c) {
-			  System.out.println(b);
+			 return b;
 		  }
 		  if(b==c && a!=b) {
-			  System.out.println(a);
+			 return a;
 		  }
 		  if(a==b && b==c) {
-			  System.out.println("0");
+			 return 0;
 		  }
-		  else if(a!=b && b!=c && a!=c) {
+		  if(a!=b && b!=c && a!=c) {
 			  
 			  int d = a + b + c;
-			  System.out.println(d);
+			  return d;
 		  }
+		return 0;
+		  
 	  }
 	
 	public static void main(String[] args) {
@@ -34,7 +34,7 @@ public class UniqueSum {
 
 		UniqueSum sum = new UniqueSum();
 		
-		sum.uniqueSum(10, 6, 17);
+		sum.uniqueSum(1, 1, 1);
 	}
 
 }

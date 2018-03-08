@@ -5,7 +5,8 @@ public class RunnerClass {
 		// TODO Auto-generated method stub
 			
 		PaintWizard pw = new PaintWizard();
-		pw.leastWaste(42067);
+		pw.leastWaste(6523);
+		pw.cheapestPaint(6523);
 		
 		
 		
